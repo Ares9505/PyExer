@@ -13,12 +13,10 @@ class TimeInterval:
                 raise ValueError('Los valores introducidos no son correctos')
                 
         except (TypeError):
-            raise TypeError('El valor introducido no es un numero')
-            
+            raise TypeError('El valor introducido no es un numero')            
         
     def __repr__(self):
-        return (f'{str(self.hour).zfill(2)}:{str(self.min).zfill(2)}:{str(self.sec).zfill(2)}')
-        
+        return (f'{str(self.hour).zfill(2)}:{str(self.min).zfill(2)}:{str(self.sec).zfill(2)}')      
         
     def __add__(self, other):
         if not isinstance(other, TimeInterval):
@@ -35,9 +33,7 @@ class TimeInterval:
             minutos +=1
         if hour > TimeInterval.max_hour:
             raise ValueError("La suma excede las 100 horas") 
-        return TimeInterval(hour, minutos, sec)
-            
-
+        return TimeInterval(hour, minutos, sec)          
         
     def __sub__(self, other):
         if not isinstance(other, TimeInterval):
@@ -76,8 +72,7 @@ class TimeInterval:
             return TimeInterval(hour, minutos, sec)
             
         except TypeError:
-            print('Debe multiplicar por un entero')
-        
+            print('Debe multiplicar por un entero')       
     
     
 ti1=TimeInterval(10,58,40)

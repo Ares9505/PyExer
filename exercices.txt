@@ -8,3 +8,20 @@ check the argument type, and in case of a mismatch, raise a TypeError exception.
 1b) Extend the class implementation prepared in the previous lab to support the addition and subtraction of integers to time interval objects;
 to add an integer to a time interval object means to add seconds;
 to subtract an integer from a time interval object means to remove seconds.
+
+2) Your task is to build a multifunction device (MFD) class consisting of methods responsible for document scanning, printing, and sending via fax.
+The methods are delivered by the following classes:
+scan(), delivered by the Scanner class;
+print(), delivered by the Printer class;
+send() and print(), delivered by the Fax class.
+
+Each method should print a message indicating its purpose and origin, like:
+'print() method from Printer class'
+'send() method from Fax class'
+
+create an MFD_SPF class ('SPF' means 'Scanner', 'Printer', 'Fax'), then instantiate it;
+create an MFD_SFP class ('SFP' means 'Scanner', 'Fax', 'Printer'), then instantiate it;
+on each object call the methods: scan(), print(), send();
+observe the output differences. Was the Printer class utilized each time?
+
+3)
