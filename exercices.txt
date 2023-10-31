@@ -1,0 +1,10 @@
+1a) Create a class representing a time interval;
+the class should implement its own method for addition, subtraction on time interval class objects;
+the class should implement its own method for multiplication of time interval class objects by an integer-type value;
+the __init__ method should be based on keywords to allow accurate and convenient object initialization, but limit it to hours, minutes, and seconds parameters;
+the __str__ method should return an HH:MM:SS string, where HH represents hours, MM represents minutes and SS represents the seconds attributes of the time interval object;
+check the argument type, and in case of a mismatch, raise a TypeError exception.
+
+1b) Extend the class implementation prepared in the previous lab to support the addition and subtraction of integers to time interval objects;
+to add an integer to a time interval object means to add seconds;
+to subtract an integer from a time interval object means to remove seconds.
